@@ -1,0 +1,22 @@
+REGISTRO DE VENDAS
+
+venda realizada:
+codigo: 1
+nome: uva
+quantidade: 10
+preco: 12.000000
+venda realizada:
+codigo: 1
+nome: uva
+quantidade: 9
+preco: 12.000000
+venda realizada:
+codigo: 1
+nome: uva
+quantidade: 0
+preco: 0.00
+venda realizada:
+codigo: 1
+nome: uva
+quantidade: 1
+preco: 12.00
