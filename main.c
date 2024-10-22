@@ -168,20 +168,23 @@ void alterar_fruta(){
     }
 }
 
-//dando erro
-void excluir_fruta(){
-    printf("informe o codigo: ");
+void excluir_fruta() {
+    printf("Informe o codigo: ");
     int codigo;
     scanf("%d", &codigo);
     
-    for(int i=0;i<1000;i++){
-        if(frutas[i].codigo == codigo){
-            frutas[codigo].codigo = 0;
-            strcpy(frutas[codigo].nome, "");
-            frutas[codigo].quantidade = 0;
-            frutas[codigo].preco = 0;
+    for (int i = 0; i < 1000; i++) {
+        if (frutas[i].codigo == codigo) {
+            strcpy(frutas[i].nome, "codigo vago");
+            frutas[i].quantidade = 0;
+            frutas[i].preco = 0;
+
+            printf("Fruta excluida com sucesso.\n");
+            return; 
         }
     }
+
+    printf("Fruta com codigo %d não encontrada.\n", codigo);
 }
 
 void registrar_venda(int codigo, char nome[], int quantidade, float preco){
